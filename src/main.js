@@ -9,6 +9,7 @@ import computedApp from './components/computed.vue'
 import classAndStyleApp from './components/classAndStyle.vue'
 import conditionalApp from './components/conditional.vue'
 import listApp from './components/list.vue'
+import eventHadingApp from './components/eventHading.vue'
 
 // 导入全局CSS
 import './assets/main.css'
@@ -54,6 +55,9 @@ conditional.mount("#conditionalApp")
 
 const listDemo = createApp(listApp)
 listDemo.mount("#listApp")
+
+const eventHading = createApp(eventHadingApp)
+eventHading.mount("#eventHadingApp")
 
 
 

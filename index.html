@@ -40,23 +40,26 @@
 </html>
 
 <style>
-
-div{
-  min-width: 800px;
-}
-button{
-  min-height:65px;
-  width: 100%;
-}
-  #app {
-    border: 1px solid black;
-    margin: 1ch;
-    display: flex;
-    flex-direction: column;
-
+  @media(min-width: 1400px) {
+    body>div{
+      min-width: 1400px;
+      margin: 0 auto;
+    }
   }
 
-  #app> div{
+  button {
+    min-height: 65px;
+    width: 100%;
+  }
+
+  #app {
+    border: 1px solid black;
+    margin: 1ch auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #app>div {
     border-bottom: 1px solid #444;
   }
 
@@ -66,7 +69,7 @@ button{
     font-size: 5ch;
     font-style: normal;
     text-align: center;
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
   }
 
   #title:hover {

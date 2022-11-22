@@ -26,15 +26,32 @@
   <div id="classAndStyleApp"></div>
 
   <div id="conditionalApp"></div>
+
+  <div id="listApp"></div>
   <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
 
 <style>
-  div {
+
+div{
+  min-width: 800px;
+}
+button{
+  min-height:65px;
+  width: 100%;
+}
+  #app {
     border: 1px solid black;
     margin: 1ch;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #app> div{
+    border-bottom: 1px solid #444;
   }
 
   #title {

@@ -8,6 +8,7 @@ import reactivityFundamentalsApp from './components/reactivityFundamentals.vue'
 import computedApp from './components/computed.vue'
 import classAndStyleApp from './components/classAndStyle.vue'
 import conditionalApp from './components/conditional.vue'
+import listApp from './components/list.vue'
 
 // 导入全局CSS
 import './assets/main.css'
@@ -47,8 +48,12 @@ computedAppMount.mount("#computedAppMount")
 
 const classAndStyle = createApp(classAndStyleApp)
 classAndStyle.mount("#classAndStyleApp")
+
 const conditional = createApp(conditionalApp)
 conditional.mount("#conditionalApp")
+
+const listDemo = createApp(listApp)
+listDemo.mount("#listApp")
 
 
 

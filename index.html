@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!-- 挂载应用至该容器 -->
+  <div id="title">张徐洋 Vue 3 从零学习过程
+  </div>
+  <div id="app"></div>
+  <div id="app1">
+    <button @click="count++">{{ count }}</button>
+  </div>
+
+  <div id="templateSyntaxApp"></div>
+
+  <div id="reactivityFundamentalsApp"></div>
+
+  <div id="computedAppMount"></div>
+
+  <div id="classAndStyleApp"></div>
+
+  <div id="conditionalApp"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
+
+<style>
+  div {
+    border: 1px solid black;
+    margin: 1ch;
+  }
+
+  #title {
+    border: 0.1ch solid darkgray;
+    border-radius: 10px;
+    font-size: 5ch;
+    font-style: normal;
+    text-align: center;
+    transition:all 0.5s ease;
+  }
+
+  #title:hover {
+    background-color: darkgray;
+    color: whitesmoke;
+  }
+</style>

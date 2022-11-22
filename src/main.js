@@ -10,6 +10,7 @@ import classAndStyleApp from './components/classAndStyle.vue'
 import conditionalApp from './components/conditional.vue'
 import listApp from './components/list.vue'
 import eventHadingApp from './components/eventHading.vue'
+import fromsApp from './components/forms.vue'
 
 // 导入全局CSS
 import './assets/main.css'
@@ -58,6 +59,9 @@ listDemo.mount("#listApp")
 
 const eventHading = createApp(eventHadingApp)
 eventHading.mount("#eventHadingApp")
+
+const froms = createApp(fromsApp)
+froms.mount("#fromsApp")
 
 
 

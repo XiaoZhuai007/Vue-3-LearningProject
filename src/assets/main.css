@@ -20,7 +20,7 @@ a,
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 445px) {
   body {
     display: flex;
     flex-wrap: wrap;

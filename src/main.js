@@ -11,6 +11,7 @@ import conditionalApp from './components/conditional.vue'
 import listApp from './components/list.vue'
 import eventHadingApp from './components/eventHading.vue'
 import fromsApp from './components/forms.vue'
+import watchersApp from './components/watchers.vue'
 
 // 导入全局CSS
 import './assets/main.css'
@@ -62,6 +63,9 @@ eventHading.mount("#eventHadingApp")
 
 const froms = createApp(fromsApp)
 froms.mount("#fromsApp")
+
+const watchers = createApp(watchersApp)
+watchers.mount("#watchersApp")
 
 
 

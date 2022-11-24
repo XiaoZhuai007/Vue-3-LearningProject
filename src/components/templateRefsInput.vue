@@ -9,7 +9,8 @@ const itemRefs = ref([])
 const templateInport= ref(null)
 onMounted(() => {
     input.value.focus()
-    alert(itemRefs.value.map(i=>i.textContent))
+    console.log(itemRefs.value.map(i=>i.textContent))
+    console.log(itemRefs.value)
 })
 </script>
 

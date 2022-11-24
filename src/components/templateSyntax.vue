@@ -20,7 +20,7 @@ const objectAttrs = {
 const url = ref('https://www.baidu.com')
 
 function toTitleDate(date) {
-    return new Date
+    return date
 }
 </script>
 
@@ -86,8 +86,8 @@ function toTitleDate(date) {
 
             <div id="useFunction">
                 <h1>调用函数</h1>
-                <div :title="toTitleDate(date)">
-                    {{ toTitleDate(date) }}</div>
+                <div :title="toTitleDate(new Date)">
+                    {{ toTitleDate(new Date) }}</div>
             </div>
 
             <br>

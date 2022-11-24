@@ -12,6 +12,7 @@ import listApp from './components/list.vue'
 import eventHadingApp from './components/eventHading.vue'
 import fromsApp from './components/forms.vue'
 import watchersApp from './components/watchers.vue'
+import templateRefsInputApp from './components/templateRefsInput.vue'
 
 // 导入全局CSS
 import './assets/main.css'
@@ -66,6 +67,9 @@ froms.mount("#fromsApp")
 
 const watchers = createApp(watchersApp)
 watchers.mount("#watchersApp")
+
+const templateRefs = createApp(templateRefsInputApp)
+templateRefs.mount("#templateRefsInputApp")
 
 
 

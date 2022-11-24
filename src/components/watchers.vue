@@ -21,7 +21,6 @@ watch(question, async (newQuestion, oldQuestion) => {
   }
 })
 
-mounted
 </script>
 
 <template>

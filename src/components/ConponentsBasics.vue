@@ -1,8 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import BasicsButton from "./BasicsComponent/BasicsButton.vue"
-import BlogPost from "./BasicsComponent/BlogPost.vue";
+import BlogPost from "./BasicsComponent/BlogPost.vue"
 import alertBox from "./BasicsComponent/AlertBox.vue"
+import CustomInput from "./BasicsComponent/CustomInput.vue"
 
 const blogList = ref([
     { id: 1, title: 'My journey with Vue', text: "first blog" },
@@ -10,12 +11,16 @@ const blogList = ref([
     { id: 3, title: 'Why Vue is so fun', text: "third blog" }
 ])
 
+const inputText = ref();
+
 const componentList = ref({ BlogPost, alertBox })
 const currentTab = ref('')
 
 const posts = ref([])
 
 const postFontSize = ref(1)
+
+const componentModel = ref();
 </script>
 
 <template>
@@ -54,6 +59,31 @@ const postFontSize = ref(1)
             <KeepAlive>
                 <component :is="componentList[currentTab]"></component>
             </KeepAlive>
+
+            <br>
+            <br>
+            <br>
+
+            <h2>v-model 等价代码</h2>
+            <textarea name="" id="" cols="30"
+                rows="10"> <input type="text" @input="inputText = $event.target.value" :value="inputText"/> </textarea>
+            <div>
+                <input type="text" @input="inputText = $event.target.value" :value="inputText" />
+                <input type="text" @input="inputText = $event.target.value" :value="inputText" />
+            </div>
+            {{ inputText }}
+
+            <br>
+            <br>
+            <br>
+
+            <h2>再组件内使用 v-model 的用法  一</h2>
+            <CustomInput v-model="componentModel"></CustomInput>
+            {{componentModel}}
+
+            <br>
+            <h2>再组件内使用 v-model 的用法  二</h2>
+            
         </div>
     </main>
 </template>
